@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: EUREKA-SERVER
+server:
+  port: 8761
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+logging:
+  level:
+#    com.netflix.eureka: OFF
+    com.netflix.discovery: OFF
+    com.netflix.eureka: INFO
+  pattern:
+#    file: [ %d{yyyy-MM-dd HH:mm:ss} ][ %level ][ %thread ] --- [ %logger{36} ][ %logger{1.} ] :=> %msg%n
+#    console: [ %d{yyyy-MM-dd HH:mm:ss} ][ %level ][ %thread ] --- [ %logger{36} ][ %logger{1.} ] :=> %msg%n
+  file:
+    name: D:\aSpringBoot\ProjectPractice\AppLogs\EUREKA_SERVER.log
+
+
+management:
+  port: 8080
+  address: 127.0.0.3
